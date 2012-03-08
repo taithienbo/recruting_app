@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, RecruitingActivity!</string>
+    <string name="app_name">Recruiting</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="status">Status</string>
+    <string name="login">Log In</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="linkedinprof">LinkedIn Profile</string>
+    <string name="sharecontact">Share Contact</string>
+    <string name="edit">Edit</string>
+    <string name="reminder">Reminder</string>
+    <string name="note">Note</string>
+
+</resources>
