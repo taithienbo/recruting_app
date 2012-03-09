@@ -24,7 +24,7 @@ public class Candidate
 	private int id;
 	private String resume_link;
 	private String linkedin_link;
-	private Timestamp date_added;
+	private String date_added;
 	
 	
 	/**
@@ -45,7 +45,7 @@ public class Candidate
 	public Candidate (String name, String specialities, int years_of_experience, String email, 
 						long phone, long second_phone, String rate, String available,
 						String location, int id, String resume_link, String linkedin_link,
-						Timestamp date_added)
+						String date_added)
 	{
 		this.name = name;
 		this.specialities = specialities;
@@ -136,7 +136,7 @@ public class Candidate
 	}
 
 
-	public Timestamp getTimestamp()
+	public String getTimestamp()
 	{
 		return date_added;
 	}

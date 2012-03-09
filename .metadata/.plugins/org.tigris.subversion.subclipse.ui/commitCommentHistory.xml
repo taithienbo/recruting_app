@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>changed the layout of contacts.xml </CommitComment>
+	<CommitComment>added more classes to retrieve Candidate data from the database </CommitComment>
+	<CommitComment>added two php scripts files at: /public_html/html5/apps/recruitment
+The two files are :
+1) login.php for authentication 
+2) candidate.php to query candidate information 
+
+Also added codes to authenticate the user. </CommitComment>
+</CommitComments>

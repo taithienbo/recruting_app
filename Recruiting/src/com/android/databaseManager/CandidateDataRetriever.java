@@ -36,7 +36,7 @@ public class CandidateDataRetriever extends DBManager
 	
 	private static final String REQUEST = "request";
 	
-	private enum CandidateFields
+	private enum CFields
 	{
 		
 		NAME 				("name"),
@@ -55,7 +55,7 @@ public class CandidateDataRetriever extends DBManager
 	
 		
 		
-		CandidateFields(String field)
+		CFields(String field)
 		{
 			this.field = field;
 		}
@@ -145,20 +145,44 @@ public class CandidateDataRetriever extends DBManager
 	
 		try
 		{
-			String name = jsonObject.getString(CandidateFields.NAME.getValue());
-			String specialities = jsonObject.getString(CandidateFields.SPECIALITIES.getValue());
-			int years_of_experience = jsonObject.getInt(CandidateFields.YEARS_OF_EXPERIENCE.getValue());
-			String email = jsonObject.getString(CandidateFields.EMAIL.getValue());
-			long phone = jsonObject.getLong(CandidateFields.PHONE.getValue());
-			long second_phone = jsonObject.getLong(CandidateFields.SECOND_PHONE.getValue());
-			String rate = jsonObject.getString(CandidateFields.RATE.getValue());
-			String available = jsonObject.getString(CandidateFields.AVAILABLE.getValue());
-			String location = jsonObject.getString(CandidateFields.LOCATION.getValue());
-			int id = jsonObject.getInt(CandidateFields.ID.getValue());
-			String resume_link = jsonObject.getString(CandidateFields.RESUME_LINK.getValue());
-			String linkedin_link = jsonObject.getString(CandidateFields.LINKEDIN_LINK.getValue());
-			Timestamp date_added = (Timestamp) jsonObject.get(CandidateFields.DATE_ADDED.getValue());
+			String name = 
+					jsonObject.isNull(CFields.NAME.getValue()) ? "" :
+						jsonObject.getString(CFields.NAME.getValue());
+		
+			String specialities = 
+					jsonObject.isNull(CFields.SPECIALITIES.getValue()) ? "" :
+				jsonObject.getString(CFields.SPECIALITIES.getValue());
 			
+			int years_of_experience = jsonObject.getInt(CFields.YEARS_OF_EXPERIENCE.getValue());
+			
+			String email = 
+					jsonObject.isNull(CFields.EMAIL.getValue()) ? "" : 
+						jsonObject.getString(CFields.EMAIL.getValue());
+			
+			long phone = jsonObject.getLong(CFields.PHONE.getValue());
+			long second_phone = jsonObject.getLong(CFields.SECOND_PHONE.getValue());
+			
+			String rate = jsonObject.isNull(CFields.RATE.getValue()) ? "" :
+				jsonObject.getString(CFields.RATE.getValue());
+			
+			String available = 
+					jsonObject.isNull(CFields.AVAILABLE.getValue()) ?  "" :
+						jsonObject.getString(CFields.AVAILABLE.getValue());
+		
+			String location = jsonObject.isNull(CFields.LOCATION.getValue()) ? "" :
+					jsonObject.getString(CFields.LOCATION.getValue());
+			
+			int id = jsonObject.getInt(CFields.ID.getValue());
+			
+			String resume_link = jsonObject.isNull(CFields.RESUME_LINK.getValue()) ? "" :
+				jsonObject.getString(CFields.RESUME_LINK.getValue());
+			
+			String linkedin_link = jsonObject.isNull(CFields.LINKEDIN_LINK.getValue()) ? "" :
+				jsonObject.getString(CFields.LINKEDIN_LINK.getValue());
+			
+		//	Timestamp date_added = (Timestamp) jsonObject.get(CFields.DATE_ADDED.getValue());
+			String date_added =  jsonObject.get(CFields.DATE_ADDED.getValue()).toString();
+				
 			candidate = new Candidate(name, specialities, years_of_experience, email, phone,
 					second_phone, rate, available, location, id, resume_link, linkedin_link,
 					date_added);

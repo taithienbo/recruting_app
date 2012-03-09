@@ -3,20 +3,159 @@ package com.android.recruit;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.android.databaseManager.CandidateDataRetriever;
+import com.android.recruit.model.Candidate;
+
+
+import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.View.OnClickListener;
+import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
-public class RecruitContacts extends ListActivity{
+
+	
+public class RecruitContacts extends Activity{
+	
+	private static ArrayList<Candidate> candidates;
+	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.contact_list);
-		contacts();
-		populateList();
+		
+		ListView lv = (ListView) findViewById(R.id.listView_contact_list);
+		
+		candidates = CandidateDataRetriever.getListOfCandidates();
+		
+		lv.setAdapter(new MyListContentAdapter(this));
+		
 	}
+	
+	
+
+	private class MyListContentAdapter extends BaseAdapter implements Filterable
+	{
+		private LayoutInflater	mInflater;
+		private Context		context;
+
+
+
+		public MyListContentAdapter ( Context context )
+		{
+			mInflater = LayoutInflater.from ( context );
+			this.context = context;
+		}
+
+
+
+		public int getCount ( )
+		{
+			// TODO Auto-generated method stub
+			return candidates.size ( );
+		}
+
+
+
+		public Object getItem ( int position )
+		{
+			// TODO Auto-generated method stub
+			return candidates.get ( position );
+		}
+
+
+
+		public long getItemId ( int position )
+		{
+			// TODO Auto-generated method stub
+			return candidates.get( position ).getId();
+		}
+
+
+
+		/**
+		 * 
+		 * @param position
+		 * @param convertView
+		 * @param parent
+		 * @return
+		 */
+		public View getView ( final int position, View convertView, ViewGroup parent )
+		{
+			ViewHolder holder;
+
+			final Candidate currCandidate = candidates.get ( position );
+			if ( convertView == null )
+			{
+				convertView = mInflater.inflate ( R.layout.contact_row_layout, null );
+				holder = new ViewHolder ( currCandidate, (TextView) findViewById(R.id.textView_contact_name),
+									(TextView) findViewById(R.id.textView_contact_location),
+									(TextView) findViewById(R.id.textView_contact_status),
+									(TextView) findViewById(R.id.textView_contact_date_added));
+
+				convertView.setTag ( holder );
+			}
+			else
+			{
+				holder = (ViewHolder) convertView.getTag ( );
+			}
+
+			holder.contact_name.setText(holder.currentCand.getName());
+			holder.contact_location.setText(holder.currentCand.getLocation());
+			holder.contact_status.setText(holder.currentCand.getAvailable());
+			holder.contact_date_added.setText(holder.currentCand.getTimestamp().toString());
+
+			
+			return convertView;
+		}
+
+
+
+		public Filter getFilter ( )
+		{
+			return null;
+		}
+
+	}
+
+	class ViewHolder
+	{
+		Candidate currentCand;
+		TextView	contact_name;
+		TextView	contact_location;
+		TextView	contact_status;
+		TextView	contact_date_added;
+
+
+
+		public ViewHolder ( Candidate candidate, TextView contact_name, TextView contact_location, TextView contact_status, 
+								TextView contact_date_added )
+		{
+			this.currentCand = candidate;
+			this.contact_name = contact_name;
+			this.contact_location = contact_location;
+			this.contact_status = contact_status;
+			this.contact_date_added = contact_date_added;
+		}
+
+	}
+
+
+	
+	
+	/**
 	private static final ArrayList<HashMap<String,String>> list =
 			new ArrayList<HashMap<String,String>>();
 	
@@ -86,4 +225,6 @@ public class RecruitContacts extends ListActivity{
 		i.putExtras(bundle);
     	startActivity(i);
 	}
+	
+	**/
 }
