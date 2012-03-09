@@ -186,6 +186,9 @@ public class CandidateDataRetriever extends DBManager
 			candidate = new Candidate(name, specialities, years_of_experience, email, phone,
 					second_phone, rate, available, location, id, resume_link, linkedin_link,
 					date_added);
+			
+			Log.d(LOG_TAG, "getCandidateObject(): Candidate name: " + candidate.getName());
+			Log.d(LOG_TAG, "getCandidateObject(): Candidate specialities: " + candidate.getSpecialities());
 		}
 		catch (JSONException e)
 		{

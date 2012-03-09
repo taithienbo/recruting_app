@@ -40,6 +40,10 @@ public class RecruitContacts extends Activity{
 		
 		candidates = CandidateDataRetriever.getListOfCandidates();
 		
+	
+	
+		
+	
 		lv.setAdapter(new MyListContentAdapter(this));
 		
 	}
@@ -100,10 +104,10 @@ public class RecruitContacts extends Activity{
 			if ( convertView == null )
 			{
 				convertView = mInflater.inflate ( R.layout.contact_row_layout, null );
-				holder = new ViewHolder ( currCandidate, (TextView) findViewById(R.id.textView_contact_name),
-									(TextView) findViewById(R.id.textView_contact_location),
-									(TextView) findViewById(R.id.textView_contact_status),
-									(TextView) findViewById(R.id.textView_contact_date_added));
+				holder = new ViewHolder ( currCandidate, (TextView) convertView.findViewById(R.id.textView_contact_name),
+									(TextView) convertView.findViewById(R.id.textView_contact_location),
+									(TextView) convertView.findViewById(R.id.textView_contact_status),
+									(TextView) convertView.findViewById(R.id.textView_contact_date_added));
 
 				convertView.setTag ( holder );
 			}
@@ -112,10 +116,17 @@ public class RecruitContacts extends Activity{
 				holder = (ViewHolder) convertView.getTag ( );
 			}
 
-			holder.contact_name.setText(holder.currentCand.getName());
-			holder.contact_location.setText(holder.currentCand.getLocation());
-			holder.contact_status.setText(holder.currentCand.getAvailable());
-			holder.contact_date_added.setText(holder.currentCand.getTimestamp().toString());
+			TextView contact_name = holder.contact_name;
+			if(contact_name == null)
+			{
+				
+				String tag = "RecruitContacts.MyListContentAdapter.getView()";
+				Log.e(tag , " contact_name is null");
+			}
+			holder.contact_name.setText(currCandidate.getName());
+			holder.contact_location.setText(currCandidate.getLocation());
+			holder.contact_status.setText(currCandidate.getAvailable());
+			holder.contact_date_added.setText(currCandidate.getTimestamp().toString());
 
 			
 			return convertView;
