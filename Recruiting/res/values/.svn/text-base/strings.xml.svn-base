@@ -5,9 +5,7 @@
     <string name="app_name">Recruiting</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="name">Name</string>
-    <string name="location">Location</string>
-    <string name="status">Status</string>
+    
     <string name="login">Log In</string>
     <string name="contacts">CONTACTS</string>
     <string name="calendar">CALENDAR</string>

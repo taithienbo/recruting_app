@@ -1,7 +1,7 @@
 10
 
 dir
-5
+7
 https://subversion.assembla.com/svn/recruiting-app/Recruiting/res/values
 https://subversion.assembla.com/svn/recruiting-app
 
@@ -26,16 +26,16 @@ pointlinesquarecube
 
 75a60768-1f0c-453c-a493-6ecd472dbbba
 
-strings.xml
+strings_contacts.xml
 file
+9
 
 
 
-
-2012-03-07T19:37:43.000000Z
-a1e84dde21bbd35a0d839606965dc06c
-2012-02-25T01:49:01.635334Z
-3
+2012-03-09T02:48:42.000000Z
+0d21715e59ef18b955afd931ec992df2
+2012-03-09T02:56:30.153234Z
+9
 pointlinesquarecube
 
 
@@ -58,5 +58,39 @@ pointlinesquarecube
 
 
 
-785
+240
+
+strings.xml
+file
+9
+
+
+
+2012-03-09T02:47:50.000000Z
+60e3acce46763d19618a390f996f2474
+2012-03-09T02:56:30.153234Z
+9
+pointlinesquarecube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+662
 

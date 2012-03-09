@@ -1,14 +1,14 @@
 10
 
 dir
-5
+7
 https://subversion.assembla.com/svn/recruiting-app/Recruiting/src/com/android
 https://subversion.assembla.com/svn/recruiting-app
 
 
 
-2012-03-07T19:55:08.460628Z
-5
+2012-03-09T00:40:04.950163Z
+7
 pointlinesquarecube
 
 
@@ -25,6 +25,39 @@ pointlinesquarecube
 
 
 75a60768-1f0c-453c-a493-6ecd472dbbba
+
+authentication
+dir
+
+
+
+delete
+
+databaseManager
+dir
+
+login
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://subversion.assembla.com/svn/recruiting-app/Recruiting/src/com/android/authentication
+7
 
 recruit
 dir

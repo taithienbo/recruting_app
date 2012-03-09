@@ -1,14 +1,14 @@
 10
 
 dir
-5
+7
 https://subversion.assembla.com/svn/recruiting-app/Recruiting/src/com/android/recruit
 https://subversion.assembla.com/svn/recruiting-app
 
 
 
-2012-03-07T19:55:08.460628Z
-5
+2012-03-09T00:40:04.950163Z
+7
 pointlinesquarecube
 
 
@@ -25,6 +25,29 @@ pointlinesquarecube
 
 
 75a60768-1f0c-453c-a493-6ecd472dbbba
+
+model
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://subversion.assembla.com/svn/recruiting-app/Recruiting/src/com/android/recruit/candidate
+7
 
 RecruitContactCard.java
 file
@@ -60,20 +83,9 @@ pointlinesquarecube
 
 1801
 
-databaseModel
-dir
-
 RecruitLogin.java
 file
-
-
-
-
-2012-03-07T19:52:07.000000Z
-a5b97479e52f6174501af4f87d8cf7d0
-2012-03-07T19:55:08.460628Z
-5
-pointlinesquarecube
+8
 
 
 
@@ -93,9 +105,7 @@ pointlinesquarecube
 
 
 
-
-
-1338
+deleted
 
 RecruitCalendar.java
 file
@@ -198,4 +208,28 @@ pointlinesquarecube
 
 
 3030
+
+candidate
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 

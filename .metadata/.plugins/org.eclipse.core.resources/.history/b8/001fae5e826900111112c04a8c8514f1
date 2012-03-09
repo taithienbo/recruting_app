@@ -1,0 +1,8 @@
+package com.android.recruit.candidate;
+
+import com.android.databaseManager.DBManager;
+
+public class CandidateDataRetriever extends DBManager{
+
+	
+}

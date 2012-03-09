@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/linearLayout1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactList_linearLayout_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/recruitmentapp_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contact_list_linear_layout_horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/recruitmentapp_background"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="26dp"
-                android:text="@string/name"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="109dp"
-                android:text="@string/location"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:text="@string/status"
-                android:textColor="#000000" />
-
-        </LinearLayout>
-
-        <ListView
-            android:id="@+id/android:list"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
-            android:divider="@drawable/dark_border" >
-        </ListView>
+            android:layout_weight="1"
+            android:text="@string/name"
+            android:textColor="#000000" />
 
+        <TextView
+            android:id="@+id/textView_location"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/location"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/status"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_date_added"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/date_added"
+            android:textColor="#000000" >
+        </TextView>
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/dark_border" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+package com.android.recruit.candidate;
+
+public class CandidateDataRetriever {
+
+}

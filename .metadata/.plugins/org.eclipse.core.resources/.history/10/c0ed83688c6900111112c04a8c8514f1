@@ -1,0 +1,25 @@
+package com.android.databaseManager;
+
+
+public class CandidateDataRetriever extends DBManager
+{
+	
+	private static final String LOG_TAG = "CandidateDataRetriever";
+	
+	
+	private static final String PHP_CANDIDATE_DATA_FILE_LINK = 
+			"http://www.rapidconsultingusa.com/html5/apps/recruitment/candidate.php";
+	
+	
+	private enum CandidateFields
+	{
+		CandidateFields(String field)
+		{
+			
+		}
+	}
+	private static final String NAME = "name";
+	private static final String SPECIALITIES = "specialities";
+	private static final String YEARS_OF_EXPERIENCE = "years_of_experience";
+	
+}
