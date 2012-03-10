@@ -21,13 +21,17 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView_location"
+            android:id="@+id/textView_skills"
             android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/location"
+            android:text="@string/specialities"
             android:textColor="#000000" />
 
+        <!-- Status will not be shown in the contact
+        page to save space.  Uncomment this and
+        other comments in the RecruitContacts.java
+        file to enable status privew
         <TextView
             android:id="@+id/textView_status"
             android:layout_width="0sp"
@@ -35,6 +39,8 @@
             android:layout_weight="1"
             android:text="@string/status"
             android:textColor="#000000" />
+          -->
+        
 
         <TextView
             android:id="@+id/textView_date_added"

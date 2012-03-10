@@ -41,7 +41,7 @@ public class RecruitContacts extends Activity{
 		candidates = CandidateDataRetriever.getListOfCandidates();
 		
 	
-	
+		
 		
 	
 		lv.setAdapter(new MyListContentAdapter(this));
@@ -103,10 +103,16 @@ public class RecruitContacts extends Activity{
 			final Candidate currCandidate = candidates.get ( position );
 			if ( convertView == null )
 			{
+				
+				// To save space, status will not be shown in the contacts page
+				// It will be shown when the user clicks on a contact 
+				// To enable status preview in contact page, uncomment these
+				// and also uncomment the comments in contact_row_layout.xml
+				
 				convertView = mInflater.inflate ( R.layout.contact_row_layout, null );
 				holder = new ViewHolder ( currCandidate, (TextView) convertView.findViewById(R.id.textView_contact_name),
-									(TextView) convertView.findViewById(R.id.textView_contact_location),
-									(TextView) convertView.findViewById(R.id.textView_contact_status),
+									(TextView) convertView.findViewById(R.id.textVew_contact_skills),
+						//			(TextView) convertView.findViewById(R.id.textView_contact_status),
 									(TextView) convertView.findViewById(R.id.textView_contact_date_added));
 
 				convertView.setTag ( holder );
@@ -124,10 +130,17 @@ public class RecruitContacts extends Activity{
 				Log.e(tag , " contact_name is null");
 			}
 			holder.contact_name.setText(currCandidate.getName());
-			holder.contact_location.setText(currCandidate.getLocation());
-			holder.contact_status.setText(currCandidate.getAvailable());
+			holder.contact_skills.setText(currCandidate.getSpecialities());
+		//	holder.contact_status.setText(currCandidate.getAvailable());
 			holder.contact_date_added.setText(currCandidate.getTimestamp().toString());
 
+			convertView.setOnClickListener(new OnClickListener(){
+				public void onClick(View v)
+				{
+					Intent intent = new Intent(v.getContext(), RecruitContactCard.class);
+					startActivity(intent);
+				}
+			});
 			
 			return convertView;
 		}
@@ -145,19 +158,20 @@ public class RecruitContacts extends Activity{
 	{
 		Candidate currentCand;
 		TextView	contact_name;
-		TextView	contact_location;
-		TextView	contact_status;
+		TextView	contact_skills;
+	//	TextView	contact_status;
 		TextView	contact_date_added;
 
 
 
-		public ViewHolder ( Candidate candidate, TextView contact_name, TextView contact_location, TextView contact_status, 
+		public ViewHolder ( Candidate candidate, TextView contact_name, TextView contact_skills,
+				//TextView contact_status, 
 								TextView contact_date_added )
 		{
 			this.currentCand = candidate;
 			this.contact_name = contact_name;
-			this.contact_location = contact_location;
-			this.contact_status = contact_status;
+			this.contact_skills = contact_skills;
+			//this.contact_status = contact_status;
 			this.contact_date_added = contact_date_added;
 		}
 

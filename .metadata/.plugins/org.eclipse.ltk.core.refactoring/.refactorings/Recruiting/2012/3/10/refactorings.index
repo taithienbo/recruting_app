@@ -6,3 +6,5 @@
 1331254446038	Move compilation unit
 1331254487090	Rename package 'com.android.recruit.candidate'
 1331265495980	Rename type 'CandidateFields'
+1331330175042	Rename field 'contact_location'
+1331332074914	Rename resource 'contact_card_layout.xml'

@@ -15,22 +15,27 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView_contact_location"
+        android:id="@+id/textVew_contact_skills"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textColor="#000026"
         android:textSize="12sp"
         android:textStyle="bold" />
-
-    <TextView
+    
+    
+<!-- To save space, status is not shown in the
+contacts page for now. It will be shown when the
+user click on a contact. >
+ <TextView
         android:id="@+id/textView_contact_status"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textColor="#000026"
         android:textSize="12sp"
-        android:textStyle="bold" />
+        android:textStyle="bold" /> -->
+   
     
     <TextView
         android:id="@+id/textView_contact_date_added"

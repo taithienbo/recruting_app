@@ -5,36 +5,37 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="7" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
+            android:name="com.android.login.RecruitLogin"
             android:label="@string/app_name"
-            android:name="com.android.login.RecruitLogin" 
-            android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter >
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-        	android:label="@string/app_name"
-            android:name=".RecruitingActivity" >
+            android:name=".RecruitingActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-        	android:label="@string/app_name"
-            android:name=".RecruitContacts" >
+            android:name=".RecruitContacts"
+            android:label="@string/app_name" >
         </activity>
         <activity
-        	android:label="@string/app_name"
-            android:name=".RecruitContactCard" >
+            android:name=".RecruitContactCard"
+            android:label="@string/app_name" >
         </activity>
         <activity
-        	android:label="@string/app_name"
-            android:name=".RecruitCalendar" >
+            android:name=".RecruitCalendar"
+            android:label="@string/app_name" >
         </activity>
     </application>
 
