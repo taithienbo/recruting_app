@@ -95,3 +95,5 @@ Caused by: java.nio.channels.UnresolvedAddressException: null
 	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
 	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
 	... 3 common frames omitted
+2012-03-11 23:01:40,666 [Worker-22] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-03-11 23:03:43,410 [Worker-22] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo1.maven.org/maven2 in 122817 ms

@@ -1,5 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svn/recruiting-app/!svn/ver/8/Recruiting/src/com/android/recruit/model
+V 72
+/svn/recruiting-app/!svn/ver/10/Recruiting/src/com/android/recruit/model
+END
+Candidate.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/recruiting-app/!svn/ver/14/Recruiting/src/com/android/recruit/model/Candidate.java
 END

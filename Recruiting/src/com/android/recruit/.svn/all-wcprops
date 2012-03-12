@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svn/recruiting-app/!svn/ver/8/Recruiting/src/com/android/recruit
+V 66
+/svn/recruiting-app/!svn/ver/10/Recruiting/src/com/android/recruit
 END
 RecruitContactCard.java
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/svn/recruiting-app/!svn/ver/4/Recruiting/src/com/android/recruit/RecruitContactCard.java
+V 90
+/svn/recruiting-app/!svn/ver/14/Recruiting/src/com/android/recruit/RecruitContactCard.java
 END
 RecruitCalendar.java
 K 25
@@ -24,6 +24,6 @@ END
 RecruitContacts.java
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/svn/recruiting-app/!svn/ver/4/Recruiting/src/com/android/recruit/RecruitContacts.java
+V 87
+/svn/recruiting-app/!svn/ver/13/Recruiting/src/com/android/recruit/RecruitContacts.java
 END

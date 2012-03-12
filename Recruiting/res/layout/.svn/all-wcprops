@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 52
-/svn/recruiting-app/!svn/ver/9/Recruiting/res/layout
+V 53
+/svn/recruiting-app/!svn/ver/10/Recruiting/res/layout
 END
 contact_card.xml
 K 25
@@ -18,8 +18,8 @@ END
 contact_list.xml
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svn/recruiting-app/!svn/ver/9/Recruiting/res/layout/contact_list.xml
+V 70
+/svn/recruiting-app/!svn/ver/13/Recruiting/res/layout/contact_list.xml
 END
 login.xml
 K 25
@@ -27,9 +27,27 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/recruiting-app/!svn/ver/7/Recruiting/res/layout/login.xml
 END
+contact_card_row_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/recruiting-app/!svn/ver/10/Recruiting/res/layout/contact_card_row_layout.xml
+END
 custom_row_view.xml
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svn/recruiting-app/!svn/ver/4/Recruiting/res/layout/custom_row_view.xml
+END
+contact_card_list_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/recruiting-app/!svn/ver/12/Recruiting/res/layout/contact_card_list_layout.xml
+END
+contact_row_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/recruiting-app/!svn/ver/13/Recruiting/res/layout/contact_row_layout.xml
 END

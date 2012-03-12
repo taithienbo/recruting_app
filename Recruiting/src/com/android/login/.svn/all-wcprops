@@ -1,5 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/recruiting-app/!svn/ver/8/Recruiting/src/com/android/login
+V 64
+/svn/recruiting-app/!svn/ver/12/Recruiting/src/com/android/login
+END
+Authentication.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/recruiting-app/!svn/ver/12/Recruiting/src/com/android/login/Authentication.java
+END
+RecruitLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/recruiting-app/!svn/ver/12/Recruiting/src/com/android/login/RecruitLogin.java
 END

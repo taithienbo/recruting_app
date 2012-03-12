@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="string_array_contact_card">
+        <item>Name</item>
+        <item>Phone</item>
+        <item>Phone 2</item>
+        <item>Email</item>
+        <item>Location</item>
+        <item>Rate</item>
+   <!-- <item>Contact Type</item>	Need to modify database if we want this field -->
+   		<item>Years of Experience</item>     
+        <item>Available</item>
+        <item>Skills</item>
+        <item>Linkedin link</item>
+        <item>Resume Link</item>
+    </string-array>
+</resources>

@@ -28,23 +28,22 @@ import android.widget.TextView;
 
 
 	
-public class RecruitContacts extends Activity{
+public class RecruitContacts extends ListActivity{
 	
 	private static ArrayList<Candidate> candidates;
+	
+	private static final String LOG_INFO = "RecruitContacts Info";
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.contact_list);
 		
-		ListView lv = (ListView) findViewById(R.id.listView_contact_list);
+	//	ListView lv = (ListView) findViewById(R.id.listView_contact_list);
 		
 		candidates = CandidateDataRetriever.getListOfCandidates();
-		
 	
-		
-		
 	
-		lv.setAdapter(new MyListContentAdapter(this));
+		setListAdapter(new MyListContentAdapter(this));
 		
 	}
 	
@@ -98,7 +97,7 @@ public class RecruitContacts extends Activity{
 		 */
 		public View getView ( final int position, View convertView, ViewGroup parent )
 		{
-			ViewHolder holder;
+			final ViewHolder holder;
 
 			final Candidate currCandidate = candidates.get ( position );
 			if ( convertView == null )
@@ -135,9 +134,15 @@ public class RecruitContacts extends Activity{
 			holder.contact_date_added.setText(currCandidate.getTimestamp().toString());
 
 			convertView.setOnClickListener(new OnClickListener(){
+				
+
 				public void onClick(View v)
 				{
 					Intent intent = new Intent(v.getContext(), RecruitContactCard.class);
+					
+					intent.putExtra(Candidate.RETRIEVAL_KEY, currCandidate);
+					
+					Log.d(LOG_INFO, "The name of candidate before passing to RecruitContactCard is : " + holder.currentCand.getName());
 					startActivity(intent);
 				}
 			});

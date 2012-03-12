@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
-V 52
-/svn/recruiting-app/!svn/ver/9/Recruiting/res/values
+V 53
+/svn/recruiting-app/!svn/ver/10/Recruiting/res/values
+END
+arrays_contact_card.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/recruiting-app/!svn/ver/14/Recruiting/res/values/arrays_contact_card.xml
 END
 strings_contacts.xml
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/recruiting-app/!svn/ver/9/Recruiting/res/values/strings_contacts.xml
+V 74
+/svn/recruiting-app/!svn/ver/10/Recruiting/res/values/strings_contacts.xml
 END
 strings.xml
 K 25

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 41
-/svn/recruiting-app/!svn/ver/9/Recruiting
+V 42
+/svn/recruiting-app/!svn/ver/11/Recruiting
 END
 .classpath
 K 25
@@ -30,6 +30,6 @@ END
 AndroidManifest.xml
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/recruiting-app/!svn/ver/8/Recruiting/AndroidManifest.xml
+V 62
+/svn/recruiting-app/!svn/ver/13/Recruiting/AndroidManifest.xml
 END

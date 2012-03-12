@@ -1,5 +1,6 @@
 package com.android.recruit.model;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.sql.Timestamp;
 
@@ -9,7 +10,7 @@ import java.sql.Timestamp;
  * @author taibo
  *
  */
-public class Candidate 
+public class Candidate implements Serializable
 {
 	
 	private String name;
@@ -25,6 +26,9 @@ public class Candidate
 	private String resume_link;
 	private String linkedin_link;
 	private String date_added;
+	
+	
+	public static final String RETRIEVAL_KEY = "Candidate Object";
 	
 	
 	/**
@@ -78,7 +82,7 @@ public class Candidate
 
 	public int get_years_of_experiences()
 	{
-		return get_years_of_experiences();
+		return years_of_experience;
 	}
 	
 	
@@ -94,9 +98,9 @@ public class Candidate
 	}
 	
 	
-	public BigInteger getSecondPhone()
+	public long getSecondPhone()
 	{
-		return getSecondPhone();
+		return second_phone;
 	}
 	
 	

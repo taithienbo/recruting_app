@@ -1,14 +1,14 @@
 10
 
 dir
-9
+11
 https://subversion.assembla.com/svn/recruiting-app/Recruiting/res/layout
 https://subversion.assembla.com/svn/recruiting-app
 
 
 
-2012-03-09T02:56:30.153234Z
-9
+2012-03-10T02:59:21.081192Z
+10
 pointlinesquarecube
 
 
@@ -96,14 +96,14 @@ pointlinesquarecube
 
 contact_list.xml
 file
+13
 
 
 
-
-2012-03-09T02:53:38.000000Z
-1efc69c4c92bd5a0b2d3fd0ff65ecc67
-2012-03-09T02:56:30.153234Z
-9
+2012-03-12T09:02:40.000000Z
+512aecb068f6e501ef333ba63bb31b0f
+2012-03-12T09:04:35.653392Z
+13
 pointlinesquarecube
 
 
@@ -126,7 +126,7 @@ pointlinesquarecube
 
 
 
-1934
+316
 
 login.xml
 file
@@ -164,10 +164,37 @@ pointlinesquarecube
 
 contact_card_row_layout.xml
 file
-0
 
 
-add
+
+
+2012-03-10T01:29:54.000000Z
+b9845834119e15cd986b69e13bebb134
+2012-03-10T02:59:21.081192Z
+10
+pointlinesquarecube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+633
 
 custom_row_view.xml
 file
@@ -205,15 +232,69 @@ pointlinesquarecube
 
 contact_card_list_layout.xml
 file
-0
+12
 
 
-add
+
+2012-03-12T06:18:28.000000Z
+0cc6bd5081f3bccb773ada0a1494550a
+2012-03-12T06:49:36.205737Z
+12
+pointlinesquarecube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+237
 
 contact_row_layout.xml
 file
-0
+13
 
 
-add
+
+2012-03-12T08:45:21.000000Z
+c58c98ac613b362fbc9084792a7d22ad
+2012-03-12T09:04:35.653392Z
+13
+pointlinesquarecube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1539
 
