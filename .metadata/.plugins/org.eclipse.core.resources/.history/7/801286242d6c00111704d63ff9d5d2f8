@@ -167,13 +167,15 @@ public class RecruitContactCard extends ListActivity
 				holder.contact_card_value.setText(candidate.getName());
 				break;
 			case 1:				// Phone
-				intent = new Intent(android.content.Intent.ACTION_DIAL, Uri.parse("tel:" + candidate.getPHone()));
+				intent = new Intent(android.content.Intent.ACTION_DIAL);
 				
+				intent.putExtra(Intent.EXTRA_PHONE_NUMBER, Uri.parse(Long.toString(candidate.getPHone()));
 				holder.contact_card_value.setText(Long.toString(candidate.getPHone()));
 
 				break;	
 			case 2:				// 2nd phone
-				intent = new Intent(android.content.Intent.ACTION_DIAL, Uri.parse("tel:" + candidate.getSecondPhone()));
+				intent = new Intent(android.content.Intent.ACTION_DIAL);
+				intent.putExtra(Intent.EXTRA_PHONE_NUMBER, candidate.getPHone());
 				holder.contact_card_value.setText(Long.toString(candidate.getSecondPhone()));
 				break;
 
